@@ -41,3 +41,4 @@ int main(){
 	serverSocket();
 	return 0;
 }
+//reason main is here is only for testing, will have to move main to another file, to ensure code is readable
