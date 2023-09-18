@@ -12,6 +12,13 @@ struct sockaddr_in forServerSocket;
 int PORT = 443;
 unsigned int localMachine = 2130706433;
 
+/*
+Number of bytes in int is based on platform, since int is normally 4 bytes, unsigned int is used
+Now convert from IP address to intger is not so hard, just take each octect and multiply it by
+256 to the octect placevalue (This should be fairly simple to understand)
+*/
+
+
 void serverSocket(void){
 	forServerSocket.sin_port = PORT;
 	forServerSocket.sin_addr.s_addr = localMachine;
